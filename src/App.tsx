@@ -1,10 +1,10 @@
-import './App.css'
+import Card from './components/card'
 
-function App({ ola }) {
+function App() {
 	return (
-		<>
-			<h1>hello</h1>
-		</>
+		<div className="w-screen h-screen flex justify-center items-center bg-gradient-to-tr from-fuchsia-500 to-cyan-500">
+			<Card />
+		</div>
 	)
 }
 
