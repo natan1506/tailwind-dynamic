@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* For rgb(255 115 179 / <alpha-value>) */
+    --color-primary: 217 70 239;
+    --color-primary2: 6 182 212;
+    --color-secondary: 217 70 239;
+    --color-secondary2: 6 182 212;
+  }
+  
+
+  .background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}
